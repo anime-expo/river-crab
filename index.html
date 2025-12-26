@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <meta charSet='utf-8'/>
+        <meta name='viewport' content='width=device-width, initial-scale=1'/>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <title>河蟹</title>
+        <script src="index.js" type="module"></script>
+    </head>
+    <body class="h-full w-full">
+        <div class="h-full w-full flex flex-col bg-indigo-50">
+            <nav class="text-white bg-indigo-500 p-2 shadow-xl flex items-end gap-4">
+                <h1 class="text-3xl font-bold">
+                    河蟹
+                </h1>
+                <p class="text-gray-300">
+                    Crabs lives matter
+                </p>
+            </nav>
+            <main class="flex-1 w-full max-w-7xl m-auto p-4 flex flex-col gap-4">
+                <textarea id="input" placeholder="input" class="flex-1 resize-none outline-none p-2 rounded-md bg-white shadow-md border-1 border-white focus:border-indigo-500"></textarea>
+                <button id="encrypt" class="cursor-pointer text-white bg-indigo-500 p-2 rounded-md hover:shadow-md active:shadow-none">加密</button>
+                <button id="decrypt"  class="cursor-pointer text-white bg-indigo-500 p-2 rounded-md hover:shadow-md active:shadow-none">解密</button>
+                <textarea id="output" placeholder="output" class="flex-1 resize-none outline-none p-2 rounded-md bg-white shadow-md border-1 border-white focus:border-indigo-500" readonly></textarea>
+            </main>
+        </div>
+    </body>
+</html>
